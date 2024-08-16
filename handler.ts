@@ -3,7 +3,7 @@ export const logger = async (event) => {
     statusCode: 200,
     body: JSON.stringify({
       message: 'Serverless CICD deme',
-      version: '1.0.0',
+      version: '2.0.0',
       timestamp: new Date().getTime(),
       event: event,
     }),
