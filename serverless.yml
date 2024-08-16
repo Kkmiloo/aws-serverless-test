@@ -1,0 +1,17 @@
+
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: cicd
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  memorySize: 128
+  timeout: 3
+
+functions:
+  logger:
+    handler: handler.logger
+    events:
+      - http:
+          path: message
+          method: get
