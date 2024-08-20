@@ -11,5 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "serverless": "3.39.0"
-  }
+  },
+  "type": "module"
 }
