@@ -2,6 +2,9 @@
 # "service" is the name of this project. This will also be added to your AWS resource names.
 service: cicd
 
+plugins:
+  - serverless-offline
+
 provider:
   name: aws
   runtime: nodejs20.x
